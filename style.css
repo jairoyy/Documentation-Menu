@@ -1,0 +1,48 @@
+
+body{
+    background-color:#CCC;
+}
+
+div.main-body {
+	display: grid;
+	grid-template-columns: minmax(300px, auto)1fr;
+	grid-template-areas: "navbar mainContent";
+	grid-gap: 20px;
+}
+
+nav#navbar {
+	grid-area: navbar;
+	position: fixed;
+}
+
+nav#navbar a {
+	display: block;
+	border: 2px solid white;
+	padding: 5px;
+	margin: 10px 0;
+	text-decoration: none;
+	color: white;
+    background-color: black;
+}
+
+#navbar a:hover{
+    box-shadow: 1px 1px 5px black;
+    
+}
+
+
+main#main-doc {
+	grid-area: mainContent;
+}
+
+header {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+code {
+	background-color: black;
+	display: block;
+	padding: 20px;
+    color: white;
+};
